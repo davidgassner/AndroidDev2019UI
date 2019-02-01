@@ -25,7 +25,7 @@
             android:layout_marginRight="8dp"
             android:scaleType="fitStart"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button1"
             android:adjustViewBounds="true"/>
 
     <Button
