@@ -14,21 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        loginButton.setOnClickListener {
-            val message = String.format(
-                getString(R.string.login_message),
-                nameInput.text,
-                passwordInput.text
-            )
-            Snackbar.make(it, message, Snackbar.LENGTH_LONG)
-                .setAction("Click me", {showAnotherMessage()})
-                .show()
-        }
-    }
-
-    private fun showAnotherMessage() {
-        Toast.makeText(this, "You clicked the button!",
-            Toast.LENGTH_LONG).show()
     }
 
 }

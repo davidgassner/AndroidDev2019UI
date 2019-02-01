@@ -1,8 +1,4 @@
 <resources>
     <string name="app_name">My Favorite Monster</string>
     <string name="action_settings">Settings</string>
-    <string name="name">Name</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="login_message">Your name is %s and your password is %s</string>
 </resources>
