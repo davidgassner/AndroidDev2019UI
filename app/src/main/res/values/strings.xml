@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My Favorite Monster</string>
     <string name="action_settings">Settings</string>
+    <string name="monster_1">Monster 1</string>
+    <string name="monster_2">Monster 2</string>
+    <string name="monster_3">Monster 3</string>
 </resources>
