@@ -34,8 +34,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun displayImage(resId: Int) {
-//        monsterImage.setImageResource(resId)
-//    }
-
 }
