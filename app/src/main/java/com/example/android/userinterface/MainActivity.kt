@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
                 nameInput.text,
                 passwordInput.text
             )
-//            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
             Snackbar.make(it, message, Snackbar.LENGTH_LONG)
                 .setAction("Click me", {showAnotherMessage()})
                 .show()
