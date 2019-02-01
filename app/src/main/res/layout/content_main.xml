@@ -14,7 +14,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/monster02"
-            android:id="@+id/imageView2"
+            android:id="@+id/monsterImage"
             android:layout_margin="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/monsterImage"
             app:layout_constraintEnd_toStartOf="@+id/button2"/>
 
     <Button
