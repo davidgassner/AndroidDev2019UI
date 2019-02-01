@@ -19,6 +19,13 @@ class MainActivity : AppCompatActivity() {
                         "and your password is ${passwordInput.text}"
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show()
             }
+
+            val message = String.format(
+                getString(R.string.login_message),
+                nameInput.text,
+                passwordInput.text
+            )
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
         }
     }
 
