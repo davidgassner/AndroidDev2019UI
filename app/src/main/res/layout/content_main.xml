@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button1"
+            android:drawableLeft="@drawable/ic_monster"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button2"
+            android:drawableLeft="@drawable/ic_monster"
             app:layout_constraintBottom_toBottomOf="@+id/button1"
             app:layout_constraintStart_toEndOf="@+id/button1"
             app:layout_constraintEnd_toStartOf="@+id/button3"/>
@@ -48,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button3"
+            android:drawableLeft="@drawable/ic_monster"
             app:layout_constraintBottom_toBottomOf="@+id/button2"
             app:layout_constraintStart_toEndOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"/>
