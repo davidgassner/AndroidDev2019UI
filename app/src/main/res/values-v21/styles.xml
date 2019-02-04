@@ -3,7 +3,7 @@
 
     <style name="monster_button" parent="@android:style/Widget.Button">
         <item name="android:drawableLeft">@drawable/ic_monster</item>
-        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:backgroundTint">@color/accent</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 </resources>
