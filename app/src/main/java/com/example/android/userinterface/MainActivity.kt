@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        addTextView("Hello")
-        addTextView("From")
-        addTextView("Android")
+        addTextView(getString(R.string.hello))
+        addTextView(getString(R.string.from))
+        addTextView(getString(R.string.android))
     }
 
     private fun addTextView(label: String) {
