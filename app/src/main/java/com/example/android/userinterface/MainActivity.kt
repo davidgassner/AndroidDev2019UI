@@ -1,5 +1,6 @@
 package com.example.android.userinterface
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,21 +16,28 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         button1.setOnClickListener{
-            displayImageResource(R.drawable.monster01)
+            displayImageAsset("monster01.webp")
         }
 
         button2.setOnClickListener{
-            displayImageResource(R.drawable.monster02)
+            displayImageAsset("monster02.webp")
         }
 
         button3.setOnClickListener{
-            displayImageResource(R.drawable.monster03)
+            displayImageAsset("monster03.webp")
         }
 
     }
 
-    private fun displayImageResource(resId: Int) {
-        monsterImage.setImageResource(resId)
+//    private fun displayImageResource(resId: Int) {
+//        monsterImage.setImageResource(resId)
+//    }
+
+    private fun displayImageAsset(fileName: String) {
+        assets.open(fileName).use {
+            val drawable = Drawable.createFromStream(it, null)
+            monsterImage.setImageDrawable(drawable)
+        }
     }
 
 }
