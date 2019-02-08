@@ -29,10 +29,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-//    private fun displayImageResource(resId: Int) {
-//        monsterImage.setImageResource(resId)
-//    }
-
     private fun displayImageAsset(fileName: String) {
         assets.open(fileName).use {
             val drawable = Drawable.createFromStream(it, null)
