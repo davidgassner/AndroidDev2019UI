@@ -13,13 +13,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        loginButton.setOnClickListener {
+        button.setOnClickListener{
+            val userName = nameInput.text.toString()
+            val password = passwordInput.text.toString()
             val message = String.format(
-                getString(R.string.login_message),
-                nameInput.text,
-                passwordInput.text
+                getString(R.string.login_message,
+                    userName, password)
             )
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, message, Toast.LENGTH_LONG)
+                .show()
         }
     }
 
