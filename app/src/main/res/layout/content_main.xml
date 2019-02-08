@@ -10,15 +10,21 @@
         tools:context=".MainActivity"
         android:padding="16dp">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="@string/your_name"
-            android:ems="10"
-            android:id="@+id/nameInput"
+            android:id="@+id/nameLayout"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/your_name"
+                android:ems="10"
+                android:id="@+id/nameInput"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
             android:layout_width="300dp"
@@ -27,7 +33,7 @@
             android:hint="@string/password"
             android:ems="10"
             android:id="@+id/passwordInput"
-            app:layout_constraintTop_toBottomOf="@+id/nameInput"
+            app:layout_constraintTop_toBottomOf="@+id/nameLayout"
             app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
@@ -37,4 +43,6 @@
             android:id="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/passwordInput"
             app:layout_constraintStart_toStartOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
