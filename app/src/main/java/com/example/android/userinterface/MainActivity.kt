@@ -16,8 +16,11 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener{
             val userName = nameInput.text.toString()
             val password = passwordInput.text.toString()
-            Toast.makeText(this,
-                "Name: $userName, Password: $password", Toast.LENGTH_LONG)
+            val message = String.format(
+                getString(R.string.login_message,
+                    userName, password)
+            )
+            Toast.makeText(this, message, Toast.LENGTH_LONG)
                 .show()
         }
     }
