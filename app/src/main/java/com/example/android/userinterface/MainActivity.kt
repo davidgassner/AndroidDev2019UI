@@ -14,6 +14,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        button1.setOnClickListener{
+            displayImageResource(R.drawable.monster01)
+        }
+
+        button2.setOnClickListener{
+            displayImageResource(R.drawable.monster02)
+        }
+
+        button3.setOnClickListener{
+            displayImageResource(R.drawable.monster03)
+        }
+
+    }
+
+    private fun displayImageResource(resId: Int) {
+        monsterImage.setImageResource(resId)
     }
 
 }
